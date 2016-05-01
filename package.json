@@ -1,0 +1,21 @@
+{
+  "name": "rssapp",
+  "version": "0.0.1",
+  "description": "Rss hosting APp",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "app",
+    "rss",
+    "node",
+    "mongodb"
+  ],
+  "author": "Thibaud",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "mongoose": "~4.4.14",
+    "express": "~4.13.4"
+  }
+}
