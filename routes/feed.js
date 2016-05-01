@@ -1,4 +1,5 @@
 var BlogPost = require('../lib/model/blog-post');
+
 module.exports = function(app) {
     app.get('/feed/rss', function(req, res) {
         BlogPost.find({})
@@ -8,7 +9,7 @@ module.exports = function(app) {
             .select('title slug publishedAt teaser')
             .exec(function(err, posts) {
                 if (err) return next(err);
-                return res.render('rss' {
+                return res.render('rss' ,{
                     posts: posts
                 });
             });
